@@ -7,6 +7,8 @@
     margin: 0;
 }
 
+
+
 /*------------------------ 
      Header Section
 -------------------------*/
@@ -22,11 +24,18 @@
     
 }
 
+.title-and-describtion{
+    width: 100%;
+    margin-top: 111px;
+    margin-bottom: 111px;
+}
+
 .title-and-describtion h1{
-    font-size: 70px;
+    font-size: 4.375rem;
     font-weight: 700;
     color: #ffff;
     margin-bottom: 20px;
+    
 }
 
 .title-and-describtion p{
@@ -67,7 +76,10 @@
 .blogs-menu{
     margin-top: 130px;
     margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
+
 .menu{
     background-color: #161616;
     height: 312px;
@@ -125,6 +137,13 @@
       Blog Options Start
 ------------------------------*/
 
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    margin-left: 24px;
+}
+
 .blog{
     height: 362px;
     width: 312px;
@@ -178,16 +197,8 @@ span{
     margin-right: 7px;
 }
 
-.blogs-menu{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-.blogs{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 24px;
-    margin-left: 24px;
-}
+
+
 
 /*----------------------------
       Blog Options End
@@ -242,3 +253,143 @@ hr{
 /*----------------------------
       Footer Section End
 ------------------------------*/
+
+/*--------------------------
+-----------------------------
+    Responsive
+-----------------------------
+-----------------------------*/
+
+
+
+/*------------------------ 
+     Tablet Device Start
+-------------------------*/
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    
+    .header{
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .header h1{
+        font-size: 40px;
+    }
+
+    .header img{
+        width: 100%;
+    }
+
+    .blogs-menu{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #ffff;
+
+    }
+
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
+    .last-blog{
+        display: none;
+    }
+
+    
+   
+
+    footer{
+        width: 935px;
+        
+    }
+    
+}
+/*------------------------ 
+     Tablet Device End
+-------------------------*/
+/*------------------------ 
+     Mobile Device Start
+-------------------------*/
+
+@media screen and (max-width: 575px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 28px 53px 0px 53px ;
+        
+    }
+    .title-and-describtion{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .header img{
+        width: 110%;
+        margin-top: -100px;
+    }
+    .header h1{
+        font-size: 22px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .header p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    
+
+    .blogs-menu{
+        display: flex;
+        flex-direction: column;
+        
+        
+       
+    }
+    .menu{
+        margin-bottom: 20px;
+    }
+    .blogs{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        width: 575px;
+    }
+    footer h2{
+        padding-top: 24px;
+    }
+    footer hr{
+        width: 335px;
+        margin-top: 24px;
+    }
+
+    
+
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-menu a{
+        margin-top: 22px;
+    }
+
+/*------------------------ 
+     Mobile Device End
+-------------------------*/
+
+

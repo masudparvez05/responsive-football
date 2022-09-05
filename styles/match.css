@@ -1,0 +1,67 @@
+/*----------------------------
+      Match Section Start
+------------------------------*/
+
+
+
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    margin-left: 24px;
+}
+
+.match{
+    height: 242px;
+    width: 250px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 53px 30px;
+    transition: .2s;
+    cursor: pointer;
+    
+}
+
+.match:hover{
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+.match-flag{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.match-flag img{
+    height: 54.42px;
+    width: 93.04px;
+}
+
+.match-flag h1{
+    font-size: 16px;
+    font-weight: 700;
+}
+.match-detail{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.match-detail h1{
+    font-size: 20px;
+    color: #161616;
+}
+
+.match-detail p{
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+/*----------------------------
+      Match Section End
+------------------------------*/
